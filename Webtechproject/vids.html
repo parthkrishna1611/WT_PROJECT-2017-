@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <title>Videos</title>
+        <link rel="stylesheet" href="navbar.css">
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="footer.css">
+        <style type="text/css">
+            body{
+                background-color: white;
+            }
+            
+            #salsa_vid{
+                
+                
+                display: block;
+                margin-left:170px;
+                margin-top:30px;
+                width:1070px;
+                
+            }
+            .video{
+                margin-top: 100px;
+                float:right;
+            }
+            #play_but{
+                margin-left:820px;
+            }
+            #desc{
+                float:left;
+                background-color: #EDEDF7;
+                border-radius: 7px;
+                font-family: 'Economica', sans-serif;
+                font-size: 175%;
+                padding:0px;
+                width:40%;
+                margin-top:70px;
+            }
+            
+            
+            #message{
+                background-color: #030303;
+
+                font-size: 140%;
+                height:60px;
+
+            }
+
+            #message p{
+                margin-left: 160px;
+                padding-top: 20px;
+                font-size:130%;
+                font-family: 'Economica', sans-serif;
+                color: #F1FC84;
+
+            }
+            #heading {
+                background-color: black;
+                color: white;
+                height:40px;
+                padding-top:13px;
+                position: relative;
+                top:-5px;
+
+            }
+            #contxt{
+                font-size: 255%;
+                font-family: 'Economica', sans-serif;
+                margin-left:170px;
+                margin-top:-0.5px;
+                
+            }
+            #play_but{
+                background-color: #EDEDF7;
+                border-radius: 6px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+                <ul class="topnav" id="dropdownclick">
+                  <li><a href="amith.php">HOME</a></li>  
+                  <li><a href="vids.html">VIDEO TUTORIALS</a></li>
+                  <li><a href="aboutus.html">ABOUT</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li class="nav_right"><a href="login.php">LOG IN</a></li>
+                  <li class="nav_right"><a href="register.php">SIGN UP</a></li>
+                  <li class="dropdownicon"><a href="javascript:void(0);" onclick="dropdownmenu()">&#9776;</a></li>    
+                </ul>  
+        </nav>
+        <div id="heading">
+            <p id="contxt">Trending Videos</p>
+            
+        </div>
+        <div id="salsa_vid">
+            <div id="desc">
+                <p style="margin-left: 5px;">In many styles of salsa dancing, as a dancer shifts their weight by stepping, the upper body remains level and nearly unaffected by the weight changes. Weight shifts cause the hips to move. Arm and shoulder movements are also incorporated. The Cuban Casino style of salsa dancing involves significant movement above the waist, with up-and-down shoulder movements and shifting of the ribcage.In the original Latin American form,</p>
+            </div>
+            <video id="video1" width="420" class="video" onmouseover="video1.play()" onmouseout="video1.pause()">
+            <source src="traviswalltoronto.mp4" type="video/mp4">
+            </video><br>
+            <button onclick="playPause(video1)" id="play_but">Play/Pause</button> 
+        </div>
+        
+        <div id="salsa_vid">
+            <div id="desc">
+                <p style="margin-left: 5px;">Arm and shoulder movements are also incorporated. The Cuban Casino style of salsa dancing involves significant movement above the waist, with up-and-down shoulder movements and shifting of the ribcage.In the original Latin American form, the forward/backward motion of salsa is done in diagonal or sideways with the 3-step weight change intact.</p>
+            </div>
+            <video id="video0" width="420" class="video" onmouseover="video0.play()" onmouseout="video0.pause()">
+            <source src="Taylor & Robert's Contemporary Performance _ Season 14 Ep. 14 _ SO YOU THINK YOU CAN DANCE.mp4" type="video/mp4">
+            </video><br>
+            <button onclick="playPause(video0)" id="play_but">Play/Pause</button> 
+        </div>
+        
+        <div id="salsa_vid">
+            <div id="desc">
+                <p style="margin-left: 5px;">Contemporary dance is characterised by its versatility: contemporary can be danced to almost any style of music, or united with other dance forms to create new styles of movement.Contemporary seeks to work with the natural alignment of the body, and is therefore safe and accessible for beginners.</p>
+            </div>
+            <video id="video2" width="420" class="video" onmouseover="video2.play()" onmouseout="video2.pause()">
+            <source src="TRAVIS WALL CLASS.mp4" type="video/mp4">
+            </video><br>
+            <button onclick="playPause(video2)" id="play_but">Play/Pause</button> 
+        </div>
+        
+        <div id="salsa_vid">
+            <div id="desc">
+                <p style="margin-left: 5px;position: relative;top:10px;">Popping is based on the technique of quickly contracting and relaxing muscles to cause a jerk in a dancer's body, referred to as a pop or a hit. When performed correctly, each hit is synchronized to the rhythm and beats of the music.Locking looks similar to popping, and the two are frequently confused by the casual observer. </p>
+            </div>
+            <video id="video3" width="420" class="video" onmouseover="video3.play()" onmouseout="video3.pause()">
+            <source src="Travis Wall teaching Seniors at iHollywood Dance.mp4" type="video/mp4">
+            </video><br>
+            <button onclick="playPause(video3)" id="play_but">Play/Pause</button> 
+        </div>
+        <div id="message">
+            
+            <p><b>DANCE <span style="margin-left: 10px;">today</span>  <span style="margin-left: 10px;">TOMORROW  </span><span style="margin-left: 10px;">AND  </span><span style="margin-left: 10px;">FOREVER</span></b></p>
+        </div>
+        <script> 
+             
+
+            function playPause(x) { 
+                if (x.paused) 
+                    x.play(); 
+                else 
+                    x.pause(); 
+            } 
+
+             
+        </script> 
+
+        <footer>
+   <div style="position:relative;left:500px;bottom:0px">
+        <a href="www.facebook.com" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+  
+</footer>       
+
+    </body>
+</html>

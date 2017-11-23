@@ -1,0 +1,74 @@
+#contemp_img {
+    float:left;
+    margin
+}
+
+#heading {
+    background-color: black;
+    font-family: 'Patua One', cursive;
+    height:40px;
+    padding-top:13px;
+    position: relative;
+    top:-5px;
+    color:white;
+}
+
+#contxt{
+    font-size: 195%;
+    margin-left:170px;
+    margin-top:-0.5px;
+}
+
+#contimg {
+    display: block;
+    float:left;
+    height: 460px;
+    width: 460px;
+}
+
+#contentContemp{
+    display: block;
+    margin-left:170px;
+    margin-top:30px;
+    font-family: 'Bree Serif', serif;
+}
+
+#contentDan{
+    float:left;
+    width:650px;
+    margin-left:10px;
+        font-family: 'Bree Serif', serif;
+
+    height: 460px;
+
+    font-size:120%;
+}
+#contentDan p{
+    padding: 0;
+    margin: 0;
+    text-align: justify
+}
+.nobld {
+    font-weight: normal;
+}
+.clear-float{
+    clear: both;
+
+}
+
+#message{
+    background-color: #030303;
+
+    font-size: 140%;
+    height:60px;
+
+}
+
+#message p{
+    margin-left: 160px;
+    padding-top: 20px;
+    font-size:130%;
+    font-family: 'Economica', sans-serif;
+    color: #F1FC84;
+
+}
